@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Inicio Sesión</title>
+  <!-- Favicon -->
+  <link rel="icon" href="/Static/img/favicon.ico">
+  <link rel="stylesheet" href="/Static/css/registro.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body class="todo">
+  <!-- header con botones -->
+  <header>
+    <div class="cont_logoybotones">
+      <a href="/index.html">
+        <img src="/Static/img/Texto Logo.png" alt="Texto logo" class="logo">
+      </a>
+      <div class="botones">
+        <div class="buscador"> <a href="/Templates/buscador.html">Encontra Cuidador</a></div>
+        <div class="ayuda"> <a href="/Templates/help.html">Ayuda</a></div>
+        <div class="favoritos"> <a href="/Templates/favoritos.html">Favoritos</a></div>
+        <div class="sesion"><button class="btnLogin-popup">Iniciar Sesión</button></div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- formulario -->
+    <br>
+    <br>
+    <div class="wrapper">
+      <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+      <div class="form-box login">
+        <h2>Iniciar Sesión</h2>
+        <form action="#">
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" required>
+            <label>Email</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" required>
+            <label>Contraseña</label>
+          </div>
+
+          <div class="remember-forgot">
+            <input type="checkbox">
+            <label> Recuerdame </label>
+            <a href="#"> Olvidaste tu contraseña?</a>
+          </div>
+          <br>
+          <button type="submit" class="btn"> Iniciar </button>
+
+          <div class="login-register">
+            <p> No tiene cuenta? <a href="#" class="register-link"> Registrate</a></p>
+          </div>
+        </form>
+      </div>
+
+      <!-- registro -->
+      <div class="form-box register">
+        <h2>Registro</h2>
+        <form action="#" id="formulario">
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="person"></ion-icon></span>
+            <input type="text" name="usuario" id="usuario" required>
+            <label for="usuario">Usuario</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="mail"></ion-icon></span>
+            <input type="email" name="email" id="email" required>
+            <label for="email">Email</label>
+          </div>
+
+          <div class="input-box">
+            <span class="icon"><ion-icon name="lock-closed"></ion-icon></span>
+            <input type="password" name="password" id="password" required>
+            <label for="password">Contraseña</label>
+          </div>
+          <div class="remember-forgot">
+            <input type="checkbox">
+            <label> Acepto los términos y condiciones </label>
+          </div>
+          <br>
+          <button type="submit" class="btn"> Registrarse </button>
+          <div class="login-register">
+            <p> Tiene cuenta? <a href="#" class="login-link"> Inicia Sesión</a></p>
+          </div>
+        </form>
+      </div>
+
+    </div>
+
+
+
+  </main>
+
+  <footer>
+    <div class="main_foot">
+      <div class="media-icons">
+        <a href="#"><i class="bi bi-facebook"></i></a>
+        <a href="#"><i class="bi bi-twitter-x"></i></a>
+        <a href="#"><i class="bi bi-instagram"></i></a>
+        <a href="#"><i class="bi bi-whatsapp"></i></a>
+      </div>
+    </div>
+
+    <div class="footer">
+      <p>&copy; 2024 Cuidando Peluditos. Todos los derechos reservados.</p>
+      <p>
+        <a href="#about">Términos y Condiciones</a> |
+        <a href="/Templates/formularioContacto.html">Contacto</a>
+      </p>
+    </div>
+
+  </footer>
+
+  <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+  <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+  <script src="/Static/Scripts/script.js"></script>
+  <script src="/Static/Scripts/fomulario.js"></script>
+</body>
+
+</html>

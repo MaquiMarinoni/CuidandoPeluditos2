@@ -1,0 +1,226 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+  box-sizing: border-box;
+  font-family: 'Poppins',sans-serif;
+}
+
+/* header  */
+
+.header{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 20px 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 99;
+}
+
+.cont_logoybotones {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #ffffffd0;
+    border-radius: 10px;
+    padding: 10px 20px;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+/* Para que no subraye los hipervinculos*/
+.cont_logoybotones a {
+  text-decoration: none;
+  color: #a954cd; /*Color de los botones header*/
+}
+
+.logo {
+  max-width: 100%;
+  height: 50px;
+  flex: 1;
+
+}
+
+.botones {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  font-size: 1.1em;
+  font-weight: 500;
+}
+
+.buscador,
+.registro,
+.sesion,
+.ayuda,
+.favoritos {
+  flex: 1;
+  margin: 2%;
+  text-align: center;
+  margin-left: 10px;
+
+}
+.buscador:hover{
+  transform: scale(1.1) translate(1%, 1%);
+  text-decoration:underline #a954cd 2px;
+}
+.registro:hover{
+  transform: scale(1.1) translate(1%, 1%);
+  text-decoration:underline #a954cd 2px;
+}
+.sesion:hover{
+  transform: scale(1.1) translate(1%, 1%);
+  text-decoration:underline #a954cd 2px;
+}
+.ayuda:hover{
+  transform: scale(1.1) translate(1%, 1%);
+  text-decoration:underline #a954cd 2px;
+}
+.favoritos:hover{
+  transform: scale(1.1) translate(1%, 1%);
+  text-decoration:underline #a954cd 2px;
+}
+
+/*Animación del Logo*/
+.logo:hover{
+  animation: tilt-n-move-shaking 0.5s infinite;
+}
+@keyframes tilt-n-move-shaking {
+  0% {transform: translate(0,0) rotate(0deg);}
+  25% {transform: translate(5px, 5px) rotate(5deg);}
+  50% {transform: translate(0,0) rotate(0deg);}
+  75% {transform: translate(-5px,5px) rotate(-5deg);}
+  100% {transform: translate(0,0) rotate(0deg);}
+}
+
+
+.cabecera {
+    background-image: url(/Static/img/puppy-2785074_1280.jpg);
+    text-align: center;
+    color: white;
+    padding-top: 15%;
+    background-size: cover;
+    background-position: center; /* Centra la imagen dentro del contenedor */
+    background-repeat: no-repeat; /* Evita que la imagen se repita */
+}
+
+.h1 {
+  padding: 2%;
+}
+
+/* .h2 {
+  padding: 2%;
+} */
+
+.faq-contenedor{
+  margin: 2%;
+    background-color: white;
+}
+
+.faq-item{
+    padding: 2%;
+}
+
+.faq-pregunta{
+    padding: 0.8%;
+    font-size: larger;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.faq-pregunta:hover{
+    color: #f25116;
+    border-color: #f25116;
+    transform: scale(1.3) translate(1%, 1%);
+    text-align: center;
+    transition: 1s;
+}
+.faq-rta{
+    padding: 0.8%;
+    flex-wrap: wrap;
+    color: rgb(64, 64, 65);
+    border-radius: 12px;
+    box-shadow: 0 5px 10px rgba(166, 109, 199, 0.25);
+    text-align: justify;
+}
+.faq-rta:hover{
+    transform: scale(1.05) translate(1%, 1%);
+    text-align: justify;
+    transition: 1.5s;
+}
+
+/*Boton de Help*/
+.btn{
+  background-color:#9B63BF;
+      display: inline-block;
+      color:#ffffff;
+      height: 40px;
+      margin: .5%; 
+      padding:0 35px;
+      border-radius: 25px;
+      font-size: 0.9em;
+      font-weight: 600;
+      border: 2px solid #9B63BF;
+      text-align: center;
+      /* Agregar efecto de botón presionado */
+          transition: transform 0.5s, box-shadow 0.3s;
+          /* &:hover {
+              background-color: #f25116;
+              transform: scale(0.95);
+              box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+          } */
+  }
+
+.main_foot {
+    display: flex;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+.media-icons{
+    margin-top: 10px;
+    display: flex;
+}
+
+.media-icons a{
+  text-align: center;
+    line-height: 33px;
+    height: 35px;
+    width: 35px;
+    margin: 0 4px;
+    font-size: 18px;
+    color: #FFF;
+    border-radius: 50%;
+    border: 2px solid transparent;
+    background: #9B63BF;
+    transition: all 0.3s ease;
+}
+
+.media-icons a:hover{
+    color: #f25116;
+    background-color: #fff;
+    border-color: #f25116;
+}
+
+.footer {
+  color: grey;
+  text-align: center;
+}
+
+.footer a {
+  text-decoration: none;
+  color: grey;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+  color: #f25116;
+}

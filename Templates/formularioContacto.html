@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de Contacto</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="/Static/css/formulario.css">
+    <!-- Favicon -->
+    <link rel="icon" href="/Static/img/favicon.ico">
+    <!-- Iconos Link -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+    <header class="header">
+        <a href="/index.html">
+            <img src="/Static/img/Texto Logo.png" alt="Texto logo" class="logo">
+        </a>
+    </header>
+
+    <div class="container">
+        <h1>Formulario de Contacto</h1>
+        <form id="formulario">
+            <div id="error-message" class="error"></div>
+
+            <label for="name">Nombre</label>
+            <div class="input-container">
+                <input type="text" id="name" name="name" autocomplete="name">
+                <i class="fas fa-exclamation-circle icon"></i>
+            </div>
+
+            <label for="email">Email</label>
+            <div class="input-container">
+                <input type="email" id="email" name="email" autocomplete="email">
+                <i class="fas fa-exclamation-circle icon"></i>
+            </div>
+
+            <label for="image">Cargar Imagen</label>
+            <div class="input-container">
+                <input type="file" id="image" name="image" accept="image/*">
+                <i class="fas fa-exclamation-circle icon"></i>
+            </div>
+
+            <div class="radio-group">
+                <label class="group-label">Tipo de Servicio</label>
+                <!-- Agrego un nuevo grupo para darle formato a la cajitas de botones de selección -->
+                <div class="radio-options">
+                    <div class="radio-item"> <!-- agrego contenedor para alinear -->
+                        <input type="radio" id="dog-walking" name="service" value="dog-walking">
+                        <label for="dog-walking">Paseo de Perros</label>
+                    </div>
+                    <div class="radio-item"> <!-- agrego contenedor para alinear -->
+                        <input type="radio" id="pet-sitting" name="service" value="pet-sitting">
+                        <label for="pet-sitting">Cuidado de Mascotas</label>
+                    </div>
+                </div>
+            </div>
+
+            <label for="subscription">Tipo de Suscripción</label>
+            <div class="input-container">
+                <select id="subscription" name="subscription">
+                    <option value="">Seleccionar suscripción</option>
+                    <option value="free">Gratis</option>
+                    <option value="standard">Estándar</option>
+                    <option value="premium">Premium</option>
+                </select>
+                <i class="fas fa-exclamation-circle icon"></i>
+            </div>
+
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <script src="/Static/Scripts/formulario.js"></script>
+
+    <footer>
+        <div class="main_foot">
+            <div class="media-icons">
+                <a href="#"><i class="bi bi-facebook"></i></a>
+                <a href="#"><i class="bi bi-twitter-x"></i></a>
+                <a href="#"><i class="bi bi-instagram"></i></a>
+                <a href="#"><i class="bi bi-whatsapp"></i></a>
+            </div>
+            <div class="footer">
+                <p>&copy; 2024 Cuidando Peluditos. Todos los derechos reservados.</p>
+                <p>
+                    <a href="#about">Términos y Condiciones</a> |
+                    <a href="#contact">Contacto</a>
+                </p>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
